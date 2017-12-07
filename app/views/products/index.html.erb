@@ -1,133 +1,164 @@
-
-
 <!DOCTYPE html>
+
 <html>
 <title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<%= csrf_meta_tags %>
-<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-<body class="light-grey">
+<body class="light-grey abc">
 
-<div class="content" style="max-width:1400px">
+  <div class="content" style="max-width:1400px">
+    <header class="container center padding-32">
+      <h1>
+        <b>Title Articles</b>
+      </h1>
+      <p>Like(0) comment(0)</p>
+    </header>
 
-<!-- Header -->
-<header class="container center padding-32"> 
-  <h1><b>Title Articles</b></h1>
-  <p>Like(0)  comment(0)</p>
-</header>
+    <!-- Grid -->
+    <div class="row">
 
-<!-- Grid -->
-<div class="row">
+      <!-- Blog entries -->
+      <div class="col l8 s12">
+        <!-- Blog entry -->                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+        <div class="card-4 margin white">
+          <%= link_to  "app/assets/images/abc.jpg" do %>
+          <%= image_tag  "abc.jpg", :alt => "Image Articles", :width => "100%" %>
+          <% end %>
+          <div class="container">
+            <h3>
+              <b>TITLE HEADING</b>
+            </h3>
+            <h5>Title description,
+              <span class="opacity">April 7, 2014</span>
+            </h5>
+          </div>
 
-<!-- Blog entries -->
-<div class="col l8 s12">
-  <!-- Blog entry -->
-  <div class="card-4 margin white">
-    <%= image_tag  "abc.jpg", :alt => "Image Articles", :width => "100%" %>
-    <div class="container">
-      <h3><b>TITLE HEADING</b></h3>
-      <h5>Title description, <span class="opacity">April 7, 2014</span></h5>
-    </div>
-
-    <div class="container">
-      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <div class="row">
-        <div class="col m8 s12">
-          <p><button class="button padding-large white border"><b>READ MORE »</b></button></p>
+          <div class="container">
+            <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod
+              placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non
+              congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
+              vitae, ultricies congue gravida diam non fringilla.</p>
+            <div class="row">
+              <div class="col m8 s12">
+                <p>
+                  <button class="button padding-large white border">
+                    <b>READ MORE »</b>
+                  </button>
+                </p>
+              </div>
+              <div class="col m4 hide-small">
+                <p>
+                  <span class="padding-large right">
+                    <b>Comments </b>
+                    <span class="tag">0</span>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col m4 hide-small">
-          <p><span class="padding-large right"><b>Comments  </b> <span class="tag">0</span></span></p>
+
+        <div class="card margin">
+          <div class="container padding">
+            <h4>Related Articles</h4>
+          </div>
+
+          <div class="row-padding">
+            <%= link_to  '#' do %>
+              <div class="col l4 m6 margin-bottom">
+                <div class="display-container">
+                  <div>Title 1</div>
+                  <%= image_tag  "abc.jpg", :alt => "Image Articles", :width => "95%" %>
+                </div>
+              </div>
+            <% end %>
+            <%= link_to  '#' do %>
+              <div class="col l4 m6 margin-bottom">
+                <div class="display-container">
+                  <div>Title 1</div>
+                  <%= image_tag  "abc.jpg", :alt => "Image Articles", :width => "95%" %>
+                </div>
+              </div>
+            <% end %>
+            <%= link_to  '#' do %>
+              <div class="col l4 m6 margin-bottom">
+                <div class="display-container">
+                  <div>Title 1</div>
+                  <%= image_tag  "abc.jpg", :alt => "Image Articles", :width => "95%" %>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- Introduction menu -->
+      <div class="col l4">
+        <div class="card margin margin-top">
+          <%= image_tag  "abc.jpg", :alt => "Image Articles", :width => "100%" %>
+            <div class="container white">
+              <h4>
+                <b>Author Name</b>
+              </h4>
+              <h5>Posts(0)</h5>
+            </div>
+        </div>
+        
+
+        <div class="card margin">
+          <div class="container padding">
+            <h1>Comment</h1>
+          </div>
+          <div class="container white">
+            <h3>comment 1</h3>
+            <h3>comment 2</h3>
+            <h3>comment 3</h3>
+            <br>
+          </div>
+        </div>
+        
+        <!-- Labels / tags -->
+        <div class="card margin">
+          <div class="container padding">
+            <h4>Tags</h4>
+          </div>
+          <div class="container white">
+            <p>
+              <span class="tag black margin-bottom">Travel</span>
+              <span class="tag light-grey small margin-bottom">New York</span>
+              <span class="tag light-grey small margin-bottom">London</span>
+              <span class="tag light-grey small margin-bottom">IKEA</span>
+              <span class="tag light-grey small margin-bottom">NORWAY</span>
+              <span class="tag light-grey small margin-bottom">DIY</span>
+              <span class="tag light-grey small margin-bottom">Ideas</span>
+              <span class="tag light-grey small margin-bottom">Baby</span>
+              <span class="tag light-grey small margin-bottom">Family</span>
+              <span class="tag light-grey small margin-bottom">News</span>
+              <span class="tag light-grey small margin-bottom">Clothing</span>
+              <span class="tag light-grey small margin-bottom">Shopping</span>
+              <span class="tag light-grey small margin-bottom">Sports</span>
+              <span class="tag light-grey small margin-bottom">Games</span>
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="card margin">
-    <div class="container padding">
-      <h4>Related articles</h4>
-    </div>
-
-    <div class="row-padding">
-      <div class="col l4 m6 margin-bottom">
-        <div class="display-container">
-          <div>Title 1</div>
-          <%= image_tag  "abc.jpg", :alt => "Image Articles", :width => "100%" %>
-        </div>
-      </div>
-      <div class="col l4 m6 margin-bottom">
-        <div class="display-container">
-          <div>Title 2</div>
-          <%= image_tag  "abc.jpg", :alt => "Image Articles", :width => "100%" %>
-        </div>
-      </div>
-      <div class="col l4 m6 margin-bottom">
-        <div class="display-container">
-          <div>Title 3</div>
-          <%= image_tag  "abc.jpg", :alt => "Image Articles", :width => "100%" %>
-        </div>
-      </div>
-      
-    </div>
-    </div>
-  <hr> 
-</div>
-
-<!-- Introduction menu -->
-<div class="col l4">
-  <!-- About Card -->
-  <div class="card margin margin-top">
-    <%= image_tag  "abc.jpg", :alt => "Image Articles", :width => "100%" %>
-    <div class="container white">
-      <h4><b>Author Name</b></h4>
-        <h5>Posts(0)</h5>  
-    </div>
-  </div><hr>
-  
-  <!-- Posts -->
-  
-  <div class="card-4 margin white">
-    <div class="container">
-      <h3><b>Comment</b></h3>
-      <h3>comment 1</h3>
-      <h3>comment 2</h3>
-      <h3>comment 3</h3><br>  
-    </div>
-  </div>
-  <hr>
-  <!-- Labels / tags -->
-  <div class="card margin">
-    <div class="container padding">
-      <h4>Tags</h4>
-    </div>
-    <div class="container white">
-    <p><span class="tag black margin-bottom">Travel</span> <span class="tag light-grey small margin-bottom">New York</span> <span class="tag light-grey small margin-bottom">London</span>
-      <span class="tag light-grey small margin-bottom">IKEA</span> <span class="tag light-grey small margin-bottom">NORWAY</span> <span class="tag light-grey small margin-bottom">DIY</span>
-      <span class="tag light-grey small margin-bottom">Ideas</span> <span class="tag light-grey small margin-bottom">Baby</span> <span class="tag light-grey small margin-bottom">Family</span>
-      <span class="tag light-grey small margin-bottom">News</span> <span class="tag light-grey small margin-bottom">Clothing</span> <span class="tag light-grey small margin-bottom">Shopping</span>
-      <span class="tag light-grey small margin-bottom">Sports</span> <span class="tag light-grey small margin-bottom">Games</span>
+  <!-- Footer -->
+  <footer class="container dark-grey padding-32 margin-top">
+    <button class="button black disabled padding-large margin-bottom">Previous</button>
+    <button class="button black padding-large margin-bottom">Next »</button>
+    <p>Powered by
+      <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
     </p>
-    </div>
-  </div>
-  
-<!-- END Introduction Menu -->
-</div>
-
-<!-- END GRID -->
-</div><br>
-
-<!-- END content -->
-</div>
-
-<!-- Footer -->
-<footer class="container dark-grey padding-32 margin-top">
-  <button class="button black disabled padding-large margin-bottom">Previous</button>
-  <button class="button black padding-large margin-bottom">Next »</button>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
+  </footer>
 
 </body>
+
 </html>
